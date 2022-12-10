@@ -15,3 +15,5 @@ io.on("connect", (socket) => {
 app.use(express.static("public"));
 
 httpServer.listen(PORT);
+
+console.log("Listening on port ", PORT);

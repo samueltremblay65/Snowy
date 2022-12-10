@@ -7,8 +7,30 @@
     <title>Snowy</title>
 </head>
 <body>
-    <h1>Hi this is a multiplayer game called snowy</h1>
+    <div id="canvas_container">
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+
     <script src="/socket.io/socket.io.js"></script>
     <script type="module" src="/index.js"></script>
 </body>
+<style>
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    #canvas_container {
+        border: 1px solid grey;
+    }
+</style>
 </html>
